@@ -61,6 +61,16 @@ output:
   10 passing (10ms)
 ```
 
+## Related projects
+
+* [focha](https://github.com/bahmutov/focha) - Mocha wrapper
+  that runs previously failed tests first
+* [rocha](https://github.com/bahmutov/rocha) - Runs Mocha unit
+  tests but randomizes their order
+* [snap-shot](https://github.com/bahmutov/snap-shot) - Jest-like
+  snapshot feature for any framework, including Mocha
+* My blog posts about [testing](https://glebbahmutov.com/blog/tags/testing/)
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2017
