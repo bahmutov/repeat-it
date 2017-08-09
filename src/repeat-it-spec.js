@@ -1,11 +1,16 @@
 'use strict'
 
-
 /* eslint-env mocha */
-const repeatIt = require('.')
+const it = require('.')
 
 describe('repeat-it', () => {
-  it('write this test', () => {
-    console.assert(repeatIt, 'should export something')
+  let counter = 0
+
+  it(10)('repeated test', () => {
+    counter += 1
+  })
+
+  after(() => {
+    console.assert(counter === 10, 'runs ' + counter + ' times')
   })
 })

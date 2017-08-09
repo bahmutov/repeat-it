@@ -8,15 +8,58 @@
 [![semantic-release][semantic-image] ][semantic-url]
 [![js-standard-style][standard-image]][standard-url]
 
+## Why
+
+You know a particularly flaky test can drive you crazy? This module makes it
+simple to run any test as many times as you want to figure out the flaky
+behavior.
+
 ## Install
 
-Requires [Node](https://nodejs.org/en/) version 6 or above.
+Requires [Node](https://nodejs.org/en/).
 
 ```sh
-npm install --save repeat-it
+npm install --save-dev repeat-it
 ```
 
 ## Use
+
+A Mocha / BDD test you want to repeat
+
+### before
+
+```js
+describe('repeat-it', () => {
+  it('repeated test', () => {})
+})
+```
+
+### after
+
+```js
+const it = require('repeat-it')
+describe('repeat-it', () => {
+  it(10)('repeated test', () => {})
+})
+```
+
+output:
+
+```
+  repeat-it
+    ✓ 1 repeated test
+    ✓ 2 repeated test
+    ✓ 3 repeated test
+    ✓ 4 repeated test
+    ✓ 5 repeated test
+    ✓ 6 repeated test
+    ✓ 7 repeated test
+    ✓ 8 repeated test
+    ✓ 9 repeated test
+    ✓ 10 repeated test
+
+  10 passing (10ms)
+```
 
 ### Small print
 
