@@ -10,6 +10,10 @@ describe('repeat-it', () => {
     counter += 1
   })
 
+  it('has .only function', () => {
+    console.assert(typeof it.only === 'function')
+  })
+
   after(() => {
     console.assert(counter === 10, 'runs ' + counter + ' times')
   })

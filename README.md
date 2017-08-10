@@ -61,6 +61,10 @@ output:
   10 passing (10ms)
 ```
 
+## Features
+
+* Supports `it.only(n)(...)` syntax to run single text N times
+
 ## Related projects
 
 * [focha](https://github.com/bahmutov/focha) - Mocha wrapper
