@@ -21,6 +21,12 @@ function checkTimes (times) {
   console.assert(isNonNegative(times), 'repeat times should be non-negative')
 }
 
+function formatMessage (title, times) {
+  return function finishFormat (k) {
+    return k + 1 + '/' + times + ' ' + title
+  }
+}
+
 function only (times) {
   if (!isNumber(times)) {
     // probably plain it('name', ...) call
@@ -31,8 +37,9 @@ function only (times) {
 
   return function (title, fn) {
     let k
+    const fullTitle = formatMessage(title, times)
     for (k = 0; k < times; k += 1) {
-      oldIt.only(k + 1 + ' ' + title, fn)
+      oldIt.only(fullTitle(k), fn)
     }
   }
 }
@@ -47,8 +54,9 @@ function repeatIt (times) {
 
   return function (title, fn) {
     let k
+    const fullTitle = formatMessage(title, times)
     for (k = 0; k < times; k += 1) {
-      oldIt(k + 1 + ' ' + title, fn)
+      oldIt(fullTitle(k), fn)
     }
   }
 }

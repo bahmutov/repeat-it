@@ -47,16 +47,16 @@ output:
 
 ```
   repeat-it
-    ✓ 1 repeated test
-    ✓ 2 repeated test
-    ✓ 3 repeated test
-    ✓ 4 repeated test
-    ✓ 5 repeated test
-    ✓ 6 repeated test
-    ✓ 7 repeated test
-    ✓ 8 repeated test
-    ✓ 9 repeated test
-    ✓ 10 repeated test
+    ✓ 1/10 repeated test
+    ✓ 2/10 repeated test
+    ✓ 3/10 repeated test
+    ✓ 4/10 repeated test
+    ✓ 5/10 repeated test
+    ✓ 6/10 repeated test
+    ✓ 7/10 repeated test
+    ✓ 8/10 repeated test
+    ✓ 9/10 repeated test
+    ✓ 10/10 repeated test
 
   10 passing (10ms)
 ```
