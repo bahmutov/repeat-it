@@ -64,6 +64,7 @@ output:
 ## Features
 
 * Supports `it.only(n)(...)` syntax to run single text N times
+* Supports `it.skip` syntax for skipping a test
 
 ## Related projects
 

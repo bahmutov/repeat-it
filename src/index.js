@@ -54,5 +54,6 @@ function repeatIt (times) {
 }
 
 repeatIt.only = only
+repeatIt.skip = oldIt.skip
 
 module.exports = repeatIt
